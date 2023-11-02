@@ -22,7 +22,6 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       database: this.configService.get<string>('DB_NAME'),
       entities: [Product, User, Token, Order_Product, Order, Favorite_Product],
       url: this.configService.get<string>('DB_URL'),
-      ssl: true,
       synchronize: false,
     };
   }
